@@ -517,55 +517,56 @@
     ctx.fillRect(0, 0, W, H);
 
     ctx.fillStyle = 'rgba(7,18,31,0.78)';
-    ctx.fillRect(28, 70, W - 56, 396);
+    ctx.fillRect(28, 72, W - 56, 382);
     ctx.strokeStyle = 'rgba(129,236,255,0.22)';
     ctx.lineWidth = 2;
-    ctx.strokeRect(29, 71, W - 58, 394);
+    ctx.strokeRect(29, 73, W - 58, 380);
 
     ctx.textAlign = 'left';
-    ctx.font = 'bold 13px "SF Mono", monospace';
+    ctx.font = 'bold 12px "SF Mono", monospace';
     ctx.fillStyle = '#81ecff';
-    ctx.fillText('CODEX 5.5 // FLIGHT CORRIDOR', 48, 110);
+    ctx.fillText('CODEX 5.5 // FLIGHT MODE', 48, 108);
 
-    ctx.font = 'bold 54px "SF Mono", monospace';
+    ctx.font = 'bold 50px "SF Mono", monospace';
     ctx.fillStyle = '#f0fbff';
     ctx.shadowBlur = 20;
     ctx.shadowColor = '#81ecff';
-    ctx.fillText('FLAPPY', 48, 172);
-    ctx.fillText('BIRD', 48, 228);
+    ctx.fillText('FLAPPY', 48, 164);
+    ctx.fillText('BIRD', 48, 216);
 
     ctx.shadowBlur = 0;
-    ctx.font = 'bold 18px "SF Mono", monospace';
+    ctx.font = 'bold 17px "SF Mono", monospace';
     ctx.fillStyle = '#9bdfff';
-    ctx.fillText('MORE PRESSURE. BETTER RHYTHM. STRONGER FRONT END.', 48, 264);
+    ctx.fillText('TIGHTER RHYTHM. HARDER RUNS.', 48, 254);
 
-    ctx.font = '16px "SF Mono", monospace';
+    ctx.font = '15px "SF Mono", monospace';
     ctx.fillStyle = 'rgba(227,242,255,0.9)';
-    ctx.fillText('Near-miss streaks, fever surges, and a cleaner visual lane.', 48, 312);
-    ctx.fillText('Built to feel tighter and more deliberate from the first run.', 48, 338);
+    ctx.fillText('Near misses build heat.', 48, 300);
+    ctx.fillText('Fever turns the lane hostile.', 48, 326);
 
     ctx.fillStyle = 'rgba(18,40,58,0.86)';
-    ctx.fillRect(48, 374, 304, 64);
+    ctx.fillRect(48, 358, 304, 72);
     ctx.strokeStyle = 'rgba(129,236,255,0.16)';
-    ctx.strokeRect(48.5, 374.5, 303, 63);
+    ctx.strokeRect(48.5, 358.5, 303, 71);
     ctx.fillStyle = '#81ecff';
     ctx.font = 'bold 12px "SF Mono", monospace';
-    ctx.fillText('INPUT', 64, 396);
+    ctx.fillText('INPUT', 64, 380);
     ctx.fillStyle = '#f0fbff';
-    ctx.font = 'bold 18px "SF Mono", monospace';
-    ctx.fillText('TAP / CLICK / SPACE / UP', 64, 424);
+    ctx.font = 'bold 16px "SF Mono", monospace';
+    ctx.fillText('TAP OR CLICK', 64, 406);
+    ctx.fillText('SPACE OR UP', 64, 426);
 
     ctx.textAlign = 'center';
     ctx.font = 'bold 18px "SF Mono", monospace';
     ctx.fillStyle = '#ffca72';
     ctx.globalAlpha = 0.7 + Math.sin(frameCount * 0.15) * 0.3;
-    ctx.fillText('START FLYING', W / 2, H - 112);
+    ctx.fillText('START FLYING', W / 2, H - 94);
     ctx.globalAlpha = 1;
 
     if (highScore > 0) {
       ctx.font = 'bold 13px "SF Mono", monospace';
       ctx.fillStyle = '#ffca72';
-      ctx.fillText('BEST ' + highScore, W / 2, H - 86);
+      ctx.fillText('BEST ' + highScore, W / 2, H - 70);
     }
     ctx.restore();
   }
