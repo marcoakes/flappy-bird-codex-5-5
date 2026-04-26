@@ -542,7 +542,7 @@
     ctx.font = '16px "SF Mono", monospace';
     ctx.fillStyle = 'rgba(227,242,255,0.9)';
     ctx.fillText('Near-miss streaks, fever surges, and a cleaner visual lane.', 48, 312);
-    ctx.fillText('Built to feel more authored than the Claude version.', 48, 338);
+    ctx.fillText('Built to feel tighter and more deliberate from the first run.', 48, 338);
 
     ctx.fillStyle = 'rgba(18,40,58,0.86)';
     ctx.fillRect(48, 374, 304, 64);
